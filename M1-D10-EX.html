@@ -225,7 +225,7 @@
       console.log(getNumbers())
 
       /* EXERCISE 28 */
-      let arrayOfArrays = function(){
+      const arrayOfArrays = function(){
         let parentArray=[[], [], []]
         for (let i=0; i<10; i++){
           parentArray[0].push(Math.floor(Math.random() * 99))
@@ -235,6 +235,16 @@
         return parentArray
       }
       console.log(arrayOfArrays())
+
+      /* EXERCISE 29 */
+      const longestArray = function(arr1, arr2){
+        let longest = arr1.length > arr2.length ? console.log(arr1) : console.log(arr2)
+      }
+
+      xx = [1, 2, 3, 4]
+      yy = [1, 2, 3, 4, 5, 6, 7, 8]
+
+      console.log(longestArray(xx, yy))
 
 
     </script>
