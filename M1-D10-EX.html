@@ -224,6 +224,17 @@
       }
       console.log(getNumbers())
 
+      /* EXERCISE 28 */
+      let arrayOfArrays = function(){
+        let parentArray=[[], [], []]
+        for (let i=0; i<10; i++){
+          parentArray[0].push(Math.floor(Math.random() * 99))
+          parentArray[1].push(Math.floor(Math.random() * 99))
+          parentArray[2].push(Math.floor(Math.random() * 99))
+        }
+        return parentArray
+      }
+      console.log(arrayOfArrays())
 
 
     </script>
