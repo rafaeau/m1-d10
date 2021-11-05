@@ -246,6 +246,21 @@
 
       console.log(longestArray(xx, yy))
 
+      /* EXERCISE 30 */
+      const higherSum = function(array1, array2){
+        let array1Sum = 0
+        let array2Sum = 0
+        for (let i=0; i<array1.length; i++){
+          array1Sum += i
+        }
+        for (let i=0; i<array2.length; i++){
+          array2Sum += i
+        }
+        if(array1Sum > array2Sum) {
+          console.log(array1Sum)
+        } else {console.log(array2Sum)}
+      }
+      console.log(higherSum(xx, yy))
 
     </script>
   </body>
