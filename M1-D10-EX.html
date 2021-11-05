@@ -86,10 +86,19 @@
       a {
         color: red;
       }
-      .table, th, tr, td {
+      .table {
         border: 1px solid;
-        border-color: black;
-        border-collapse: collapse;
+        border-radius: 10px;
+      }
+      td, th {
+        border-left: 1px solid;
+        border-top: 1px solid;
+      }
+      th {
+        border-top: none;
+      }
+      td:first-child, th:first-child {
+        border-left: none;
       }
     </style>
   </head>
@@ -138,6 +147,8 @@
         <td>Data</td>
       </tr>
     </table>
+
+    <br>
 
     <hr>
 
