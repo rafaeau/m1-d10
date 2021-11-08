@@ -98,7 +98,7 @@
       }
       td {
         border: 2px dotted;
-        border-color: green;
+        border-color: red;
         padding: 5px;
       }
       p {
@@ -187,11 +187,13 @@
       /* ------JS EXERCISES------ */
 
       /* EXERCISE 21 */
+
       let x = "John"
       let y = "Doe"
       console.log(x + " <> " + y)
       
       /* EXERCISE 22 */
+
       let user = {
         name: "Rafael",
         surname: "Ferreira",
@@ -200,18 +202,26 @@
       console.log(user)
 
       /* EXERCISE 23 */
+
       delete user.email
       console.log(user)
 
       /* EXERCISE 24 */
-      let array = ["string1", "string2", "string3", "string4", "string5", "string6", "string7", "string8", "string9", "string10"]
+
+      let array = []
+      for (let i = 1; i <= 10; i++) {
+        let item = "string " + i
+        array.push(item)
+      } console.log(array)
 
       /* EXERCISE 25 */
-      for (i=0; i<array.length; i++){
-        console.log(array[i])
-      }
+
+      for (i = 0; i < array.length; i++) {
+          console.log(array[i])
+        }
 
       /* EXERCISE 26 */
+
       let arrayRandomNum=[]
       for (let i=1; i<=100; i++){
         arrayRandomNum.push(i)
@@ -219,24 +229,43 @@
       console.log(arrayRandomNum)
 
       /* EXERCISE 27 */
-      const getNumbers = function(){
+
+      /* const getNumbers = function(){
         return "The smaller number in the array is: " + Math.min(...arrayRandomNum) + " and the largest is: " + Math.max(...arrayRandomNum)
       }
-      console.log(getNumbers())
+      console.log(getNumbers()) */
+
+      const getNumbers = function (array) {
+          let min = array[0]
+          let max = array[0]
+          for (let i = 0; i < array.length; i++) {
+            if (array[i] < min) {
+              min = array[i]
+            }
+            if (array[i] > max) {
+              max = array[i]
+            }
+          } return ("The smallest number in the array is " + min + " and the biggest number in the array is " + max)
+        }
+      console.log(getNumbers(arrayRandomNum))
 
       /* EXERCISE 28 */
-      const arrayOfArrays = function(){
-        let parentArray=[[], [], []]
-        for (let i=0; i<10; i++){
-          parentArray[0].push(Math.floor(Math.random() * 99))
-          parentArray[1].push(Math.floor(Math.random() * 99))
-          parentArray[2].push(Math.floor(Math.random() * 99))
+
+      const arrayOfArrays = function () {
+          let parentArray = []
+          for (let i = 0; i < 3; i++) {
+            let childArray = []
+            for (let i = 0; i < 10; i++) {
+              childArray.push(Math.floor(Math.random() * 10))
+            }
+            parentArray.push(childArray)
+          }
+          return parentArray
         }
-        return parentArray
-      }
-      console.log(arrayOfArrays())
+        console.log(arrayOfArrays())
 
       /* EXERCISE 29 */
+
       const longestArray = function(arr1, arr2){
         let longest = arr1.length > arr2.length ? console.log(arr1) : console.log(arr2)
       }
@@ -247,20 +276,63 @@
       console.log(longestArray(xx, yy))
 
       /* EXERCISE 30 */
+
       const higherSum = function(array1, array2){
         let array1Sum = 0
         let array2Sum = 0
         for (let i=0; i<array1.length; i++){
-          array1Sum += i
+          array1Sum += array1[i]
         }
         for (let i=0; i<array2.length; i++){
-          array2Sum += i
+          array2Sum += array[i]
         }
         if(array1Sum > array2Sum) {
-          console.log(array1Sum)
-        } else {console.log(array2Sum)}
+          console.log(array1)
+        } else {console.log(array2)}
       }
       console.log(higherSum(xx, yy))
+
+      /* EXERCISE 31 */
+
+      let elementToGrab = document.getElementById("container")
+
+      /* EXERCISE 32 */
+
+      /* EXERCISE 33 */
+
+      /* EXERCISE 34 */
+
+      /* EXERCISE 35 */
+
+      /* EXERCISE 36 */
+
+      /* EXERCISE 37 */
+
+      /* EXERCISE 38 */
+
+      /* EXERCISE 38 */
+
+      /* EXERCISE 40 */
+
+      /* EXERCISE 41 */
+
+      /* EXERCISE 42 */
+
+      /* EXERCISE 43 */
+
+      /* EXERCISE 44 */
+
+      /* EXERCISE 45 */
+
+      /* EXERCISE 46 */
+
+      /* EXERCISE 47 */
+
+      /* EXERCISE 48 */
+
+      /* EXERCISE 49 */
+
+      /* EXERCISE 50 */
 
     </script>
   </body>
