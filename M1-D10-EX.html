@@ -302,7 +302,18 @@
 
       /* EXERCISE 33 */
 
+      let elementToGrab2 = document.getElementsByTagName("td")
+      for (let i=0; i<elementToGrab2.length; i++){
+        console.log(elementToGrab[i])
+      }
+
       /* EXERCISE 34 */
+
+      const headingToChange = function(content){
+        let heading = document.querySelector("h1")
+        heading.innerText = content
+      }
+      headingToChange("New heading")
 
       /* EXERCISE 35 */
 
